@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>ToDo App</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <input id="input" type="text" placeholder="Press Enter to add task" />
+            <ul id="important" class="container"></ul>
+            <ul id="normal" class="container"></ul>
+            <ul id="done" class="container"></ul>
+        </div>
+        
+        <script type="text/template" id="template">
+            <span class="title <%= done ? 'done' : '' %> <%= important ? 'important' : '' %>"><%- title %></span>
+            <div class="options">
+        <% if (!done) { %>
+                <div class="priorityBtn buttons" title="Change Priority" >!</div>
+        <% } %>
+                <div class="doneBtn buttons" title="Mark as done">Done</div>
+                <div class="deleteBtn buttons" title="Delete">X</div>
+            </div>
+        </script>
+        
+        <script src="js/lib/jquery-1.8.1.min.js"></script>
+        <script src="js/lib/underscore-min.js"></script>
+        <script src="js/lib/backbone-min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

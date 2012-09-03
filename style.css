@@ -1,0 +1,86 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+html {
+    background: #eee;
+}
+
+body {
+    font-size: 62%;
+    font-family: Georgia, Arial, sans-serif;
+}
+
+#wrapper {
+    width: 80em;
+    margin: 2em auto;
+    padding: 1em;
+    box-shadow: inset 0 0 1em #aaa;
+    background: #999;
+    border-radius: 1em;
+}
+
+input {
+    width: 39em;
+    border-radius: .25em;
+    border: 0;
+    font-size: 2em;
+    padding: .25em .5em;
+}
+
+.container {
+    background: #eee;
+    margin-top: 1em;
+    border-radius: .5em;
+}
+
+li {
+    font-size: 2em;
+    padding: 0.25em;
+    position: relative;
+}
+li:hover,
+li.onhover{
+    background: #ddd;
+}
+.title {
+    width: 34em;
+    line-height: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+.important .title {
+    font-weight: bold;
+}
+.done .title {
+    text-decoration: line-through;
+}
+.options {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.buttons {
+    cursor: pointer;
+    background: none repeat scroll 0 0 #BBBBBB;
+    border-radius: 1em;
+    float: left;
+    font-size: 0.75em;
+    margin: 0.25em;
+    padding: 0.25em 0.5em;
+}
+.priorityBtn:hover,
+#important .priorityBtn {
+    background: #F00;
+    color: #FFF;
+}
+.doneBtn:hover,
+#done .doneBtn {
+    background: #0F0;
+    color: #FFF;
+}
+.deleteBtn:hover {
+    background: #444;
+    color: #FFF;
+}
